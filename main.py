@@ -1,5 +1,5 @@
 import os
-
+import sys
 
 def find_sub_dirs(root_dir):
     builder = ""
@@ -16,4 +16,4 @@ def find_sub_dirs(root_dir):
     return builder
 
 
-print(find_sub_dirs("." ))
+print(find_sub_dirs(sys.argv[0]))
