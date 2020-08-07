@@ -16,4 +16,4 @@ def find_sub_dirs(root_dir):
     return builder
 
 
-print(find_sub_dirs(sys.argv[0]))
+print(find_sub_dirs(sys.argv[1]))
