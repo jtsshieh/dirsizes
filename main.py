@@ -3,7 +3,7 @@ import sys
 
 def find_sub_dirs(root_dir):
     builder = ""
-    for directory in os.scandir(root_dir):
+    for directory in os.listdir(root_dir):
         if not directory.is_dir():
             continue
         total_size = 0
