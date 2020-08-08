@@ -7,7 +7,7 @@ def find_sub_dirs(root_dir):
         if os.path.isdir(directory):
             continue
         total_size = 0
-        for parent_dir, sub_dirs, filenames in os.walk(directory):
+        for parent_dir, sub_dirs, filenames in os.walk(os.path.join(root_dir, directory)):
             for f in filenames:
                 fp = os.path.join(parent_dir, f)
                 if not os.path.islink(fp):
