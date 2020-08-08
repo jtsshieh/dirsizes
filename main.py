@@ -4,7 +4,7 @@ import sys
 def find_sub_dirs(root_dir):
     builder = ""
     for directory in os.listdir(root_dir):
-        if not directory.is_dir():
+        if os.path.is_dir(directory):
             continue
         total_size = 0
         for parent_dir, sub_dirs, filenames in os.walk(directory):
