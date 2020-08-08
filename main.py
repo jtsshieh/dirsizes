@@ -12,7 +12,7 @@ def find_sub_dirs(root_dir):
                 fp = os.path.join(parent_dir, f)
                 if not os.path.islink(fp):
                     total_size += os.path.getsize(fp)
-        builder += directory + " - " + total_size + " bytes\n"
+        builder += directory + " - " + str(total_size) + " bytes\n"
     return builder
 
 
